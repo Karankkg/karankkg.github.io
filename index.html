@@ -22,7 +22,15 @@ line-height:1.6;
 header{
 text-align:center;
 padding:80px 20px;
-background:linear-gradient(135deg,#1e3a8a,#2563eb);
+background:linear-gradient(135deg,#1e3a8a,#2563eb,#3b82f6);
+background-size:400% 400%;
+animation:gradient 8s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 header h1{
@@ -45,6 +53,12 @@ background:#1e293b;
 padding:25px;
 border-radius:15px;
 margin-top:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
 }
 
 h2{
@@ -94,7 +108,7 @@ border:4px solid white;
 margin-bottom:20px;">
   
 <h1>Karan Kumar Gupta</h1>
-<p>B.Tech Artificial Intelligence & Machine Learning Student</p>
+<p>B.Tech in Artificial Intelligence & Machine Learning Student</p>
 <p>Future AI Engineer | Python Developer | Problem Solver</p>
 <p>📍 Greater Noida, Uttar Pradesh, India</p>
 </header>
@@ -102,10 +116,17 @@ margin-bottom:20px;">
 <section>
 <div class="card">
 <h2>About Me</h2>
+
 <p>
 I am a B.Tech student specializing in Artificial Intelligence and Machine Learning at Galgotias University.
 I am passionate about AI, software development, and solving real-world problems using technology.
 </p>
+
+<p>
+Currently seeking internships and opportunities in Artificial Intelligence,
+Machine Learning, and Software Development.
+</p>
+
 </div>
 
 <div class="card">
@@ -140,7 +161,10 @@ I am passionate about AI, software development, and solving real-world problems 
 
 <div class="project">
 <h3>Student Manual System</h3>
-<p>Java GUI based project for managing student records.</p>
+<p>
+Developed a Java GUI application for managing student records,
+including add, update, delete and search functionalities.
+</p>
 </div>
 
 <div class="project">
@@ -153,6 +177,7 @@ I am passionate about AI, software development, and solving real-world problems 
 <h2>Education</h2>
 <p>B.Tech in Artificial Intelligence and Machine Learning</p>
 <p>Galgotias University</p>
+<p>Expected Graduation: 2028</p>
 </div>
   
 <div class="card">
@@ -161,7 +186,7 @@ I am passionate about AI, software development, and solving real-world problems 
 <p>Email: karankgupta29@gmail.com</p>
 
 <p>
-GitHub:
+🐱 GitHub:
 <a href="https://github.com/Karankkg"
 target="_blank" style="color:#60a5fa;">
 github.com/Karankkg
@@ -169,7 +194,7 @@ github.com/Karankkg
 </p>
 
 <p>
-LinkedIn:
+💼 LinkedIn:
 <a href="https://linkedin.com/in/karan-kumar-gupta-38065a341"
 target="_blank" style="color:#60a5fa;">
 View LinkedIn Profile
@@ -177,7 +202,7 @@ View LinkedIn Profile
 </p>
 
 <p>
-LeetCode:
+💻 LeetCode:
 <a href="https://leetcode.com/u/Kkg2229/"
 target="_blank" style="color:#60a5fa;">
 View LeetCode Profile
@@ -185,7 +210,7 @@ View LeetCode Profile
 </p>
 
 <p>
-Instagram:
+📸 Instagram:
 <a href="https://www.instagram.com/karan_gupta_kkg/"
 target="_blank" style="color:#60a5fa;">
 View Instagram Profile
@@ -198,7 +223,8 @@ style="background:#2563eb;
 color:white;
 padding:12px 20px;
 text-decoration:none;
-border-radius:8px;">
+border-radius:8px;
+font-weight:bold;">
 📄 Download Resume
 </a>
 </p>
